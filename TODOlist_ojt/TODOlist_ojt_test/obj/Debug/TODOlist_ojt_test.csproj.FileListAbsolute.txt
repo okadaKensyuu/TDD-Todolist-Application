@@ -1,0 +1,9 @@
+c:\users\y.miyazawa\documents\visual studio 2015\Projects\TODOlist_ojt\TODOlist_ojt_test\bin\Debug\TODOlist_ojt_test.dll
+c:\users\y.miyazawa\documents\visual studio 2015\Projects\TODOlist_ojt\TODOlist_ojt_test\bin\Debug\TODOlist_ojt_test.pdb
+c:\users\y.miyazawa\documents\visual studio 2015\Projects\TODOlist_ojt\TODOlist_ojt_test\bin\Debug\nunit.framework.dll
+c:\users\y.miyazawa\documents\visual studio 2015\Projects\TODOlist_ojt\TODOlist_ojt_test\bin\Debug\TODOlist_ojt.dll
+c:\users\y.miyazawa\documents\visual studio 2015\Projects\TODOlist_ojt\TODOlist_ojt_test\bin\Debug\TODOlist_ojt.pdb
+c:\users\y.miyazawa\documents\visual studio 2015\Projects\TODOlist_ojt\TODOlist_ojt_test\bin\Debug\nunit.framework.xml
+c:\users\y.miyazawa\documents\visual studio 2015\Projects\TODOlist_ojt\TODOlist_ojt_test\obj\Debug\TODOlist_ojt_test.csprojResolveAssemblyReference.cache
+c:\users\y.miyazawa\documents\visual studio 2015\Projects\TODOlist_ojt\TODOlist_ojt_test\obj\Debug\TODOlist_ojt_test.dll
+c:\users\y.miyazawa\documents\visual studio 2015\Projects\TODOlist_ojt\TODOlist_ojt_test\obj\Debug\TODOlist_ojt_test.pdb

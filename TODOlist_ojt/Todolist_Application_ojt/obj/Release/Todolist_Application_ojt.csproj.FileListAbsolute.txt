@@ -1,0 +1,8 @@
+C:\Users\y.miyazawa\Documents\Visual Studio 2015\Projects\TODOlist_ojt\Todolist_Application_ojt\bin\Release\Todolist_Application_ojt.exe.config
+C:\Users\y.miyazawa\Documents\Visual Studio 2015\Projects\TODOlist_ojt\Todolist_Application_ojt\bin\Release\Todolist_Application_ojt.exe
+C:\Users\y.miyazawa\Documents\Visual Studio 2015\Projects\TODOlist_ojt\Todolist_Application_ojt\bin\Release\Todolist_Application_ojt.pdb
+C:\Users\y.miyazawa\Documents\Visual Studio 2015\Projects\TODOlist_ojt\Todolist_Application_ojt\bin\Release\TODOlist_ojt.dll
+C:\Users\y.miyazawa\Documents\Visual Studio 2015\Projects\TODOlist_ojt\Todolist_Application_ojt\bin\Release\TODOlist_ojt.pdb
+C:\Users\y.miyazawa\Documents\Visual Studio 2015\Projects\TODOlist_ojt\Todolist_Application_ojt\obj\Release\Todolist_Application_ojt.csprojResolveAssemblyReference.cache
+C:\Users\y.miyazawa\Documents\Visual Studio 2015\Projects\TODOlist_ojt\Todolist_Application_ojt\obj\Release\Todolist_Application_ojt.exe
+C:\Users\y.miyazawa\Documents\Visual Studio 2015\Projects\TODOlist_ojt\Todolist_Application_ojt\obj\Release\Todolist_Application_ojt.pdb

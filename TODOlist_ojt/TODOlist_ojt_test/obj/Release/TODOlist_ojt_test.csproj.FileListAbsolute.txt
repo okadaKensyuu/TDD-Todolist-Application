@@ -1,0 +1,9 @@
+C:\Users\y.miyazawa\Documents\Visual Studio 2015\Projects\TODOlist_ojt\TODOlist_ojt_test\bin\Release\TODOlist_ojt_test.dll
+C:\Users\y.miyazawa\Documents\Visual Studio 2015\Projects\TODOlist_ojt\TODOlist_ojt_test\bin\Release\TODOlist_ojt_test.pdb
+C:\Users\y.miyazawa\Documents\Visual Studio 2015\Projects\TODOlist_ojt\TODOlist_ojt_test\bin\Release\nunit.framework.dll
+C:\Users\y.miyazawa\Documents\Visual Studio 2015\Projects\TODOlist_ojt\TODOlist_ojt_test\bin\Release\TODOlist_ojt.dll
+C:\Users\y.miyazawa\Documents\Visual Studio 2015\Projects\TODOlist_ojt\TODOlist_ojt_test\bin\Release\TODOlist_ojt.pdb
+C:\Users\y.miyazawa\Documents\Visual Studio 2015\Projects\TODOlist_ojt\TODOlist_ojt_test\bin\Release\nunit.framework.xml
+C:\Users\y.miyazawa\Documents\Visual Studio 2015\Projects\TODOlist_ojt\TODOlist_ojt_test\obj\Release\TODOlist_ojt_test.csprojResolveAssemblyReference.cache
+C:\Users\y.miyazawa\Documents\Visual Studio 2015\Projects\TODOlist_ojt\TODOlist_ojt_test\obj\Release\TODOlist_ojt_test.dll
+C:\Users\y.miyazawa\Documents\Visual Studio 2015\Projects\TODOlist_ojt\TODOlist_ojt_test\obj\Release\TODOlist_ojt_test.pdb
