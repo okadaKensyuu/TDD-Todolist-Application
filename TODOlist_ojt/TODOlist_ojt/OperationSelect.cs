@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace TODOlist_ojt
 {
@@ -23,9 +20,10 @@ namespace TODOlist_ojt
                 ShowFunctionList();
                 Console.Write("操作番号を入力：");
                 var inputNumber = InputElementsExceptionCheck();
-                CheckNumberAvailableRange(inputNumber);
+                if(inputNumber != 10)
+                    inputNumber = CheckNumberAvailableRange(inputNumber);
                 showString = IdentifyInputNumberFixDoProcess(inputNumber);
-                if(showString != null)
+                if (showString != null)
                     Console.WriteLine(showString);
             }
         }
@@ -55,7 +53,7 @@ namespace TODOlist_ojt
             }
         }
        /// <summary>
-       /// 入力された数値が使用可能な範囲かのチェックを行う
+       /// 入力された数値が存在する機能番号と一致するかのチェックを行う
        /// 範囲外なら9を返す
        /// </summary>
         public int CheckNumberAvailableRange(int inputNumber)
@@ -77,11 +75,11 @@ namespace TODOlist_ojt
                 case 8:
                     OM.whenNumber8OutoutProcess();
                     var replacingTodoNumber = InputReplacingTodoNumber();
-                    if (replacingTodoNumber == 10000)
-                        return null;
+                    if (replacingTodoNumber == 11)
+                        return ReturnNull();
                     var replacementtargetTodoNumber = InputReplacementTargetTodoNumber();
-                    if (replacementtargetTodoNumber == 10000)
-                        return null;
+                    if (replacementtargetTodoNumber == 11)
+                        return ReturnNull();
                     return OM.WhenNumber8InputProcess(replacingTodoNumber, replacementtargetTodoNumber);
                 case 9:
                     return ReturnMessageIsNumberOutsideRange();
@@ -118,9 +116,9 @@ namespace TODOlist_ojt
             var todoNumber = InputSwapNUmberExceptionCheck();
             return todoNumber;
         }
-
+        /// <summary>
         /// 入力されたTODO入れ替えの番号のチェックを行う
-        /// 例外が発生した場合は代わりに10000を返す
+        /// 例外が発生した場合は代わりに11を返す
         /// </summary>
         public int InputSwapNUmberExceptionCheck()
         {
@@ -132,15 +130,15 @@ namespace TODOlist_ojt
             catch (FormatException error)
             {
                 Console.WriteLine("[!] " + error.Message);
-                return 10000;
+                return 11;
             }
         }
         /// <summary>
-        /// 数値が範囲外のエラーメッセージを返す
+        /// 数値が範囲外だった場合に返すエラーメッセージ
         /// </summary>
         public string ReturnMessageIsNumberOutsideRange()
         {
-            return "[!] 範囲外の数値が入力されました。";
+            return "[!] 正しい機能番号を入力してください。";
         }
         /// <summary>
         /// nullを返す
@@ -150,7 +148,7 @@ namespace TODOlist_ojt
             return null;
         }
         /// <summary>
-        /// プログラムを終了する場合のメッセージを返す
+        /// プログラムを終了する場合に返すメッセージ
         /// </summary>
         public string ReturnMessageIsProgramEnd()
         {

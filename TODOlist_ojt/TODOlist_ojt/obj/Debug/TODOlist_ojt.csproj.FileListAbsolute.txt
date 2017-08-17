@@ -3,3 +3,4 @@ c:\users\y.miyazawa\documents\visual studio 2015\Projects\TODOlist_ojt\TODOlist_
 c:\users\y.miyazawa\documents\visual studio 2015\Projects\TODOlist_ojt\TODOlist_ojt\obj\Debug\TODOlist_ojt.csprojResolveAssemblyReference.cache
 c:\users\y.miyazawa\documents\visual studio 2015\Projects\TODOlist_ojt\TODOlist_ojt\obj\Debug\TODOlist_ojt.dll
 c:\users\y.miyazawa\documents\visual studio 2015\Projects\TODOlist_ojt\TODOlist_ojt\obj\Debug\TODOlist_ojt.pdb
+C:\Users\y.miyazawa\documents\visual studio 2015\Projects\TODOlist_ojt\TODOlist_ojt\bin\Debug\TODOlist_ojt.dll.config

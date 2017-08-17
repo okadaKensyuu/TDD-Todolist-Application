@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TODOlist_ojt
 {
@@ -43,7 +41,7 @@ namespace TODOlist_ojt
         /// <summary>
         /// 最初のTODOを取得する
         /// </summary>
-        public string AcquisitionFirstTodoProcess()
+        public string AcquisitionFirstTodo()
         {
             LoadCsvFiletoTodoList();
             if (IsTodoListContentEmpty(todoList))
@@ -53,7 +51,7 @@ namespace TODOlist_ojt
         /// <summary>
         /// 最後のTODOを取得する
         /// </summary>
-        public string AcquisitionLastTodoProcess()
+        public string AcquisitionLastTodo()
         {
             LoadCsvFiletoTodoList();
             if (IsTodoListContentEmpty(todoList))
@@ -79,7 +77,7 @@ namespace TODOlist_ojt
         /// <summary>
         /// 全てのTODOを出力する処理
         /// </summary>
-        public string OutputAllTodoProcess()
+        public string OutputAllTodo()
         {
             LoadCsvFiletoTodoList();
             if (IsTodoListContentEmpty(todoList))
@@ -91,7 +89,7 @@ namespace TODOlist_ojt
         /// <summary>
         /// 最初のTODOを削除する
         /// </summary>
-        public string RemoveFirstTodoProcess()
+        public string RemoveFirstTodo()
         {
             LoadCsvFiletoTodoList();
             if (IsTodoListContentEmpty(todoList))
@@ -131,7 +129,7 @@ namespace TODOlist_ojt
         /// <summary>
         /// TODOを入れ替える処理
         /// </summary>
-        public string SwapTodoProcess(int replacingPosition, int taegetPosition)
+        public string SwapTodo(int replacingPosition, int taegetPosition)
         {
             LoadCsvFiletoTodoList();
             if (IsTodoListContentEmpty(todoList))
@@ -192,14 +190,14 @@ namespace TODOlist_ojt
             }
         }
         /// <summary>
-        /// リストが空の場合にメッセージを返す
+        /// リストが空の場合に返すメッセージ
         /// </summary>
         public string ReturnMessageIsListempty()
         {
             return "[！] リストにTODOデータが存在しません。";
         }
         /// <summary>
-        /// 選択された要素番号が同一だった場合のメッセージを返す
+        /// 選択された要素番号が同一だった場合に返すメッセージ
         /// </summary>
         public string ReturnMessageIsEqualValueSpecified()
         {
@@ -207,14 +205,14 @@ namespace TODOlist_ojt
         }
 
         /// <summary>
-        /// TODOの削除を行った場合のメッセージを返す
+        /// TODOの削除を行った場合に返すメッセージ
         /// </summary>
         public string ReturnMessageIsRemoveTodo()
         {
             return "<< 削除しました >>";
         }
         /// <summary>
-        /// TODOの一覧表示を行った場合のメッセージを返す
+        /// TODOの一覧表示を行った場合に返すメッセージ
         /// </summary>
         public string ReturnMessageIsOutputAllTodo()
         {
@@ -222,28 +220,28 @@ namespace TODOlist_ojt
         }
 
         /// <summary>
-        /// リストのTODOをすべて削除した場合のメッセージを返す
+        /// リストのTODOをすべて削除した場合に返すメッセージ
         /// </summary>
         public string ReturnMessageIsRemoveAllTodo()
         {
             return "<< TODOをすべて削除しました >>";
         }
         /// <summary>
-        /// TODOを入れ替えた場合のメッセージを返す
+        /// TODOを入れ替えた場合に返すメッセージ
         /// </summary>
         public string ReturnMessageIsSwapTodo()
         {
             return "<< TODOを入れ替えました >>";
         }
         /// <summary>
-        /// 選択した数値がリストの範囲外だった場合のメッセージを返す
+        /// 選択した数値がリストの範囲外だった場合に返すメッセージ
         /// </summary>
         public string ReturnMessageIsNumberRangeOutsideTodo()
         {
             return "[！] 選択した数値がリストの範囲外です。";
         }
         /// <summary>
-        /// TODOの要素数が一個だった場合のメッセージを返す
+        /// TODOの要素数が一個だった場合に返すメッセージ
         /// </summary>
         public string ReturnMessageIsTodolistElementsCountIsOne()
         {

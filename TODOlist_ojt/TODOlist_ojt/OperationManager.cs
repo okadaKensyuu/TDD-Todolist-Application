@@ -69,28 +69,28 @@ namespace TODOlist_ojt
         /// </summary>
         public string RequestOutputFirstTodo()
         {
-            return TM.AcquisitionFirstTodoProcess();
+            return TM.AcquisitionFirstTodo();
         }
         /// <summary>
         /// 最後に追加したTODOの取得処理を呼び出す
         /// </summary>
         public string RequestOutputLastTodo()
         {
-            return TM.AcquisitionLastTodoProcess();
+            return TM.AcquisitionLastTodo();
         }
         /// <summary>
         /// 全てのTODOの取得処理を呼び出す
         /// </summary>
         public string RequestShowAllTodo()
         {
-            return TM.OutputAllTodoProcess();
+            return TM.OutputAllTodo();
         }
         /// <summary>
         /// 最初のTODOの削除処理を呼び出す
         /// </summary>
         public string RequestRemoveFirstTodo()
         {
-            return TM.RemoveFirstTodoProcess();
+            return TM.RemoveFirstTodo();
         }
         /// <summary>
         /// 最後のTODOの削除処理を呼び出す
@@ -111,9 +111,7 @@ namespace TODOlist_ojt
         /// </summary>
         public string RequestSwapTwoTodo(int replacingPosition, int targetPosition)
         {
-            return TM.SwapTodoProcess(replacingPosition, targetPosition);
+            return TM.SwapTodo(replacingPosition, targetPosition);
         }
-
-        
     }
 }

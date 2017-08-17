@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Configuration;
 
 namespace TODOlist_ojt
 {
@@ -12,8 +10,13 @@ namespace TODOlist_ojt
     /// </summary>
     public class CsvManager
     {
-        private string csvFileName = @"C:\Users\y.miyazawa\Documents\tododata.csv";
-
+        private string csvFileName = "todolist.csv";
+        private string csvFilePath = "";
+        public CsvManager()
+        {
+            string currentDirectory = Directory.GetCurrentDirectory();
+            csvFilePath = currentDirectory + @"\" + csvFileName;
+        }
         /// <summary>
         /// CSVファイルが無ければCSVファイルを生成する
         /// </summary>
@@ -27,7 +30,7 @@ namespace TODOlist_ojt
         /// </summary>
         public bool IsExistsCsv()
         {
-            return File.Exists(csvFileName) ? true : false;
+            return File.Exists(csvFilePath) ? true : false;
         }
 
         /// <summary>
@@ -35,9 +38,12 @@ namespace TODOlist_ojt
         /// </summary>
         public void CreateCsvFile()
         {
-            using (var todofile = File.Create(csvFileName))
+            using (var todofile = File.Create(csvFilePath))
             {
+                if (todofile != null)
+                    todofile.Close(); 
             }
+            Console.WriteLine(ReturnMessageIsCreateCsvfile());
         }
         /// <summary>
         /// リストにCSVファイルの内容を読み込む
@@ -45,7 +51,7 @@ namespace TODOlist_ojt
         public List<string> ReadCsvFile()
         {
             var readTodoList = new List<string>();
-            using (var loadCsvFile = new StreamReader(csvFileName))
+            using (var loadCsvFile = new StreamReader(csvFilePath))
             {
                 var readLines = loadCsvFile.ReadToEnd().Split(new[] { "\r\n" }, StringSplitOptions.None);
                 foreach (var loadLine in readLines)
@@ -88,7 +94,7 @@ namespace TODOlist_ojt
         public string WriteTodoListToCsvFile(List<string> writeTodoList)
         {
             var temporaryTodoList = new List<string>(writeTodoList);
-            using (var writeCsvFile = new StreamWriter(csvFileName))
+            using (var writeCsvFile = new StreamWriter(csvFilePath))
             {
                 foreach (var writeLine in temporaryTodoList)
                     writeCsvFile.WriteLine(writeLine);
@@ -111,19 +117,28 @@ namespace TODOlist_ojt
             }
         }
         /// <summary>
-        /// 例外が発生した場合のメッセージを返す
+        /// 例外が発生した場合に返すメッセージ
         /// </summary>
         public string ReturnMessageIsExceptionError(Exception error)
         {
             return "[!] " + error.Message;
         }
         /// <summary>
-        /// CSVへの追加が完了した場合のメッセージを返す
+        /// CSVへの追加が完了した場合に返すメッセージ
         /// </summary>
         /// <returns></returns>
         public string ReturnMessageIsAddingComplete()
         {
-            return "<< 追加しました。 >>";
+            return "<< 追加しました >>";
+        }
+        
+        /// <summary>
+        /// CSVファイルを新規作成した場合に返すメッセージ
+        /// </summary>
+        public string ReturnMessageIsCreateCsvfile()
+        {
+            return "<< CSVファイルを新規作成しました >>";
         }
     }
+
 }
